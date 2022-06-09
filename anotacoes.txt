@@ -36,3 +36,7 @@ O que é?
 Documentação:
 https://www.npmjs.com/package/node-fetch
 
+Sobre nosso projeto:
+
+Não utlizaremos SDKs por questões didáticas, mas é sugerido utilizá-las em ambiente de produção.
+
