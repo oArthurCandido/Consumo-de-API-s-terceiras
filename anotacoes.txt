@@ -1,0 +1,38 @@
+Consumo de API's terceiras.
+
+Como se preparar para iontegrar?
+
+Requisitos de integração: 
+O que é necessário para realizar a integração?
+O que precisamos saber?
+
+Documentação e alinhamento:
+O cliente da API (APIConsumer nesse documento)(que pode ser um personagem (único ou time) de TI interno ou um personagem(consultorias, softwareHouse, freelancer, etc) externo) solicita a documentação da API ao desenvolvedor dela e faz alinhamentos quanto aos requisitos apresentados na documentação.
+
+Necessidade do negócio: 
+O APIConsumer irá checar junto ao responsável pela solicitação da integração (APIUser nesse documento) quais são as necessidades do negócio que levaram a solicitação de tal integração.
+
+Arquitetura da integração:
+O APIConsumer vai considerar as necessidades do negócio, os requisitos apresentados na documentação e definir como será realizada a integração, quais serão as requisições, quando serão feitas, quem deverá realizá-las definindo a arquitetura dessa integração.
+
+Requisitos técnicos:
+O APIConsumer baseado nos dados já levantados irá analisar quais alterações serão necessárias para realizar a integração.
+
+Robustez:
+O APIConsumer vai definir quais ações serão tomadas em caso de falha na API terceira. 
+
+Segurança:
+O APIConsumer deve considerar as questões de segurança na transmissão de dados entre aplicações e também na infraestrutura do provedor da API.
+
+NODE FETCH.
+
+O que é?
+
+Biblioteca de integração.
+
+O que é?
+É uma ferramenta que permite a conexão de uma API terceira em sua aplicação, o NODE FETCH será a biblioteca que usaremos nesse exemplo.
+
+Documentação:
+https://www.npmjs.com/package/node-fetch
+
