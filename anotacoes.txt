@@ -38,5 +38,15 @@ https://www.npmjs.com/package/node-fetch
 
 Sobre nosso projeto:
 
-Não utlizaremos SDKs por questões didáticas, mas é sugerido utilizá-las em ambiente de produção.
+Não utilizaremos SDKs por questões didáticas, mas é sugerido utilizá-las em ambiente de produção.
+
+Criamos uma aplicação Express que retorna transações da Cielo, possuindo 3 requisições, uma de compra (POST), uma de captura (PUT) e uma de consulta (GET).
+
+Os dados de integração da API da Cielo estão na documentação oficial: https://developercielo.github.io/manual/'?shell#vis%C3%A3o-geral-api-e-commerce-cielo.
+
+AXIOS.
+
+É outra opção de biblioteca cliente HTTP como a Node Fetch. Possui recursos mais avançados que a Node-Fetch.
+
+Documentação: https://www.npmjs.com/package/axios
 
