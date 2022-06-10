@@ -50,3 +50,5 @@ AXIOS.
 
 Documentação: https://www.npmjs.com/package/axios
 
+Na implementação do Axios, iremos integrar o Pagarme a nossa aplicação.
+
