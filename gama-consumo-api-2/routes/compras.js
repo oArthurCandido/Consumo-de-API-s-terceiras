@@ -11,26 +11,26 @@ router.post('/', function (req, res, next) {
       const amount = result.data.amount;
       console.log(statusPagarme, paymentId, amount);
 
-      // pagarme
-      //   .captura(paymentId, amount)
-      //   .then(result => {
-      //     if (statusPagarme == 'paid') {
-      //       res.status(201).send({
-      //         Status: 'Ok',
-      //         Message: 'Compra realizada com sucesso!',
-      //         CompraId: paymentId
-      //       });
-      //     } else {
-      //       res.status(402).send({
-      //         Status: 'Falhou',
-      //         Message:
-      //           'Compra não realizada, problema na cobrança com cartão de crédito =('
-      //       });
-      //     }
-      //   })
-      //   .catch(err => {
-      //     // console.log(er);
-      //   });
+      pagarme
+        .captura(paymentId, amount)
+        .then(result => {
+          if (statusPagarme == 'paid') {
+            res.status(201).send({
+              Status: 'Ok',
+              Message: 'Compra realizada com sucesso!',
+              CompraId: paymentId
+            });
+          } else {
+            res.status(402).send({
+              Status: 'Falhou',
+              Message:
+                'Compra não realizada, problema na cobrança com cartão de crédito =('
+            });
+          }
+        })
+        .catch(err => {
+          // console.log(er);
+        });
     })
     .catch(function (error) {
       console.log(error);
